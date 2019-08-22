@@ -1,0 +1,42 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  color: #444;
+}
+
+h1 { 
+  background-color: #55B3C5;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+#menu {
+  margin-top: 0;
+  list-style: none;
+  background-color:#ccc;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+#menu > li {
+  float: left;
+  padding: 20px;
+}
+
+#menu > li:hover{
+  color: #fff;
+  background-color: #535353;
+  cursor: pointer;
+}
+
+input {
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+
+fieldset {
+  border: 1px dashed;
+}

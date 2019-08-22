@@ -1,0 +1,21 @@
+body {
+  font-size: 40px;
+}
+
+li {
+  background-color: blue;
+  color: white;
+}
+
+.lannister {
+  color: yellow;
+}
+
+#queen {
+  color: purple;
+  font-style: bold;
+}
+
+.lannister#queen {
+  color: black;
+}

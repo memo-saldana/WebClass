@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header>
+      <h1>Registry Form</h1>
+  </header>
+  <nav>
+     <ul id="menu">
+         <li>Home</li>
+         <li>About the site</li>
+         <li>Registry</li>
+         <li>Contact</li>
+         <li>Copyright</li>
+     </ul> 
+  </nav>
+  <section>
+    <fieldset>
+        <legend>New account registry</legend>
+        <span id="information">
+            Your information is safe with us
+        </span>
+
+        <div class="row">
+            <label>Complete Name:</label>
+        </div>
+        <input type="text" class="formElement" name="name" placeholder="Tu nombre">
+
+        <div class="row">
+            <label>Email:</label>
+        </div>
+        <input type="email" class="formElement" name="email">
+
+        <div class="row">
+            <label>Password:</label>
+        </div>
+        <input type="password" class="formElement" name="password">
+
+        <div class="row">
+            <label>Password confirmation:</label>
+        </div>
+        <input type="password" class="formElement" name="password_confirmation">
+
+        <div class="row">
+            <label>Country</label>
+        </div>
+        <select class="formElement">
+          <option>Select a country</option>
+          <option>Mexico</option>
+          <option>USA</option>
+        </select>
+
+        <div class="row">
+            <label>Gender</label>
+        </div>
+        <input type="radio" name="gender" value="M">Masculine
+        <br>
+        <input type="radio" name="gender" value="F">Femenine
+
+        <br><br>
+
+        <div class="row">
+            <input class="btn btn-cancel" type="button" name="cancel" value="Cancel">
+            <input class="btn btn-submit" type="button" name="submit" value="Submit">
+        </div>
+
+        <div class="row">
+            <button class="btn btn-cancel" >Cancel</button>
+            <button class="btn btn-submit" >Submit</button>
+        </div>
+
+        <div class="row">
+            <span class="btn btn-cancel">Cancel</span>
+            <span class="btn btn-submit">Submit</span>
+        </div>
+
+        <div class="row">
+            <div class="btn btn-cancel">Cancel</div>
+            <div class="btn btn-submit">Submit</div>
+        </div>
+      </fieldset>
+          
+  </section>
+  
+
+</body>
+</html>

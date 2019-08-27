@@ -4,74 +4,76 @@
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
   <header>
-      <h1>Registry Form</h1>
+    <h1>Registry Form</h1>
   </header>
   <nav>
-     <ul id="menu">
-         <li>Home</li>
-         <li>About the site</li>
-         <li>Registry</li>
-         <li>Contact</li>
-         <li>Copyright</li>
-     </ul> 
+    <ul id="menu">
+      <li>Home</li>
+      <li>About the site</li>
+      <li>Registry</li>
+      <li>Contact</li>
+      <li>Copyright</li>
+    </ul> 
   </nav>
   <section>
     <fieldset>
-        <legend>New account registry</legend>
+      <legend>New account registry</legend>
         <span id="information">
-            Your information is safe with us
+          Your information is safe with us
         </span>
-
+        
         <div class="row">
-            <label>Complete Name:</label>
+          <label>Complete Name:</label>
         </div>
-        <input type="text" class="formElement" name="name" placeholder="Tu nombre">
-
+        <input id="name" type="text" class="formElement" name="name" placeholder="Tu nombre">
+        <span id="nameError" class="error">El nombre no puede estar vacío</span>
         <div class="row">
-            <label>Email:</label>
+          <label>Email:</label>
         </div>
         <input type="email" class="formElement" name="email">
-
+        <span id="emailError" class="error"></span>
         <div class="row">
-            <label>Password:</label>
+          <label>Password:</label>
         </div>
         <input type="password" class="formElement" name="password">
-
+        <span id="passwordError" class="error"></span>
+        
         <div class="row">
-            <label>Password confirmation:</label>
+          <label>Password confirmation:</label>
         </div>
         <input type="password" class="formElement" name="password_confirmation">
-
+        <span id="passwordConfirmationError" class="error"></span>
+        
         <div class="row">
-            <label>Country</label>
+          <label>Country</label>
         </div>
         <select class="formElement">
           <option>Select a country</option>
           <option>Mexico</option>
           <option>USA</option>
         </select>
-
+        
         <div class="row">
-            <label>Gender</label>
+          <label>Gender</label>
         </div>
         <input type="radio" name="gender" value="M">Masculine
         <br>
         <input type="radio" name="gender" value="F">Femenine
-
+        
         <br><br>
-
+        
         <div class="row">
-            <button class="btn btn-cancel" >Cancel</button>
-            <button class="btn btn-submit" >Submit</button>
+          <button class="btn btn-cancel" >Cancel</button>
+          <button class="btn btn-submit" id="btnSubmit" >Submit</button>
         </div>
       </fieldset>
-          
+
   </section>
   
 
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

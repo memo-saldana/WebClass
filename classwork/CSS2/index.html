@@ -29,32 +29,33 @@
           <label>Complete Name:</label>
         </div>
         <input id="name" type="text" class="formElement" name="name" placeholder="Tu nombre">
-        <span id="nameError" class="error">El nombre no puede estar vacío</span>
+        <span id="nameError" class="error">Name can't be empty</span>
         <div class="row">
           <label>Email:</label>
         </div>
-        <input type="email" class="formElement" name="email">
-        <span id="emailError" class="error"></span>
+        <input id="email" type="email" class="formElement" name="email">
+        <span id="emailError" class="error">Email is not valid</span>
         <div class="row">
           <label>Password:</label>
         </div>
-        <input type="password" class="formElement" name="password">
-        <span id="passwordError" class="error"></span>
+        <input id="password" type="password" class="formElement" name="password">
+        <span id="passwordError" class="error">Password is not correct</span>
         
         <div class="row">
           <label>Password confirmation:</label>
         </div>
-        <input type="password" class="formElement" name="password_confirmation">
-        <span id="passwordConfirmationError" class="error"></span>
+        <input id="passwordConfirmation" type="password" class="formElement" name="passwordConfirmation">
+        <span id="passwordConfirmationError" class="error">Password confirmation is not correct</span>
         
         <div class="row">
           <label>Country</label>
         </div>
-        <select class="formElement">
-          <option>Select a country</option>
-          <option>Mexico</option>
-          <option>USA</option>
+        <select id="country" class="formElement">
+          <option value="0">Select a country</option>
+          <option value="1">Mexico</option>
+          <option value="2">USA</option>
         </select>
+        <span id="countryError">Option is not available</span>
         
         <div class="row">
           <label>Gender</label>
@@ -62,7 +63,7 @@
         <input type="radio" name="gender" value="M">Masculine
         <br>
         <input type="radio" name="gender" value="F">Femenine
-        
+        <span id="genderError">Gender not chosen</span>
         <br><br>
         
         <div class="row">

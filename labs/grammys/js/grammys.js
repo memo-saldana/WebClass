@@ -20,7 +20,7 @@ dropdown.change( _ => {
     nominees.append(`<h3> ${category.category_name} </h3>`);
     nominees.append(`<p class="description"> ${category.description} </p>`);
     nominees.append(`<ul>`);
-//  - ${nominee.artist}: ${nominee.info} 
+
     category.nominees.forEach((nominee,i) => {
       nominees.append(`<li> <h4 class="${i == category.winner_id ? 'winner': ''}">${nominee.nominee}  </h4> ${i == category.winner_id? '<span>WINNER!</span>': ''}</li>`);
       nominees.append(`<p> ${nominee.artist}`);

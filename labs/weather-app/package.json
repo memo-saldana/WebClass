@@ -13,5 +13,8 @@
     "url": "https://github.com/memo-saldana/WebClass/issues"
   },
   "homepage": "https://github.com/memo-saldana/WebClass#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }

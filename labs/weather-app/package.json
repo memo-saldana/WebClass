@@ -1,0 +1,17 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {},
+  "author": "Jose Guillermo Saldana Cardenas",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memo-saldana/WebClass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/memo-saldana/WebClass/issues"
+  },
+  "homepage": "https://github.com/memo-saldana/WebClass#readme",
+  "description": ""
+}

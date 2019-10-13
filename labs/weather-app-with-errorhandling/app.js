@@ -17,8 +17,7 @@ request.get({url:geolocationURL, json:true}, (err, response, body) => {
           case 401:
             console.log("Tus credenciales para el api de MapBox son incorrectas.");
           break;
-        }
-      return 
+        } 
     } else if(err) {
       // console.log('err :', err);
       switch(err.code){
@@ -28,12 +27,12 @@ request.get({url:geolocationURL, json:true}, (err, response, body) => {
         default:
           console.log("Hubo un error desconocido");
       }
-      return;
     } else {
       if(body.features && body.features.length == 0){
-        return console.log("La ciudad dada no fue encontrada.");
+        console.log("La ciudad dada no fue encontrada.");
       }
     }
+    return;
   }
   let feature = body.features[0];
   let lat = feature.center[1];
@@ -46,9 +45,9 @@ request.get({url:geolocationURL, json:true}, (err, response, body) => {
   request.get({url: weatherURL, json: true}, (err, response, body) => {
     if(err || response.statusCode >= 400){
       if(response && response.statusCode == 403){
-        return console.log("Tus credenciales para el api de DarkSky son incorrectas.");
+        console.log("Tus credenciales para el api de DarkSky son incorrectas.");
       } else if(response && response.statusCode == 400){
-        return console.log("La información proveida es incorrecta")
+        console.log("La información dada es incorrecta")
       } else {
         console.log('err :', err);
         switch(err.code){
@@ -58,8 +57,8 @@ request.get({url:geolocationURL, json:true}, (err, response, body) => {
           default:
             console.log("Hubo un error desconocido");
         }
-        return;
       }
+      return;
     }
     let {summary, temperature, precipProbability } = body.currently;
     console.log(summary + '. Actualmente esta a '+ temperature + '°C. Hay '+ precipProbability + '% de probabilidad de lluvia.');
